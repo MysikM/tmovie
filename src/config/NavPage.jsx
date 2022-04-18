@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import {Navigate, Route, Routes} from 'react-router-dom';
 
 import Home from '../pages/Home';
 import Catalog from "../pages/Catalog";
@@ -12,6 +12,7 @@ const NavPage = () => {
             <Route path='/:category/:id' element={<Detail />}/>
             <Route path='/:category/' element={<Catalog />}/>
             <Route path='/' element={<Home />}/>
+            <Route path='/tmovie' element={<Navigate to='/' replace />}/>
         </Routes>
     );
 };

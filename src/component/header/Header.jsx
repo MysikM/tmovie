@@ -7,7 +7,7 @@ import logo from '../../assets/tmovie.png';
 const headerNav = [
     {
         display: 'Home',
-        path: '/'
+        path: '/tmovie'
     },
     {
         display: 'Movies',
